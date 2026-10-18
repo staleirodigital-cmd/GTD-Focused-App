@@ -5,3 +5,9 @@ node_modules/
 *.log
 tests/app.mjs
 tests/contexts.mjs
+
+# Referências integrais permanecem fora do repositório público
+private-reference/
+reference/
+*.pdf
+*.zip

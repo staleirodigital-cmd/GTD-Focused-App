@@ -24,3 +24,9 @@ Agrupamentos são destinos clicáveis com ícone e alvo completo. Contextos usam
 
 ## Captura e atualização de compromissos
 O botão global de captura e o atalho N sempre guardam na Inbox, sem inferir projeto ou ação. Adicionar aqui e Adicionar próxima ação são operações contextuais distintas. Datas comunicam compromisso, prazo ou reconsideração também nas listas. Na página de um projeto, não repetir seu nome em cada ação. Permitir concluir o resultado sem concluir automaticamente ações relacionadas. Acompanhamento de uma espera é uma nova ação escrita pelo usuário, preservando a espera original. Estados vazios informam o recorte sem incentivar preenchimento.
+
+## Setup e sublistas
+A chegada não exige configuração e não insere tarefas fictícias. Contextos iniciais são editáveis. Um convite opcional permite ajustar listas ou começar pela captura. Usuários existentes mantêm registros e organização.
+Criar lista pede nome; a localização vem preenchida e pode ser alterada sob demanda. Criar sublista é a mesma operação, com a lista atual como destino. Listas podem conter itens e outras listas. Pais agregam os registros descendentes sem cópia; filhos herdam o significado do agrupamento. Nenhuma profundidade transforma lista em projeto.
+Oferecer renomear, mover a estrutura, reordenar irmãos com controles acessíveis e remover preservando itens/sublistas no nível acima. Impedir ciclos e proteger migração/importação. A entrada Organizar listas é acessível pelas opções e no convite inicial. Não exigir gestos escondidos, tags ou entrevista de IA para estruturar o sistema.
+Aguardar o primeiro teste do usuário antes de uma nova simulação de usabilidade. Verificações técnicas não são pesquisa de usabilidade.

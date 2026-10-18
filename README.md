@@ -18,9 +18,13 @@ Para servir localmente, execute `python3 -m http.server 4173` na raiz e abra `ht
 - Dados no navegador, exportação/importação JSON e migração dos registros do protótipo anterior.
 - Assistência de esclarecimento demonstrativa, identificada na interface. Nenhum modelo de IA está conectado.
 
+## Organização inicial
+
+O primeiro acesso começa sem tarefas fictícias, com quatro contextos editáveis. É possível criar listas e sublistas, alterar nomes e localização, reordenar irmãos e remover listas preservando o conteúdo no nível acima. O menu de opções oferece **Organizar listas**. Configurar é opcional: a captura continua disponível desde o primeiro momento.
+
 ## Princípios
 
-Leia [DESIGN.md](DESIGN.md) antes de alterar o produto. O objetivo é oferecer a liberdade do papel com uma interface refinada, sem burocratizar o GTD. A IA ajuda a esclarecer; contexto, intenção e compromisso pertencem ao usuário.
+Leia [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md), [DESIGN.md](DESIGN.md) e [a síntese das referências](docs/GTD-REFERENCES.md) para retomar as decisões antes de alterar o produto. O objetivo é oferecer a liberdade do papel com uma interface refinada, sem burocratizar o GTD. A IA ajuda a esclarecer; contexto, intenção e compromisso pertencem ao usuário.
 
 ## Verificação
 
