@@ -43,3 +43,6 @@ O usuário rejeitou os emojis em todas as listas e pediu removê-los. Base vetor
 
 ## Escolha mais recente
 Usuário escolheu aplicar a proposta A do estudo, com ícones vetoriais em vez de emojis. Listas principais mantêm identidade própria; sublistas usam um símbolo neutro comum, circular com traços internos. Preservar composição, modelo livre e fluxos. Usuário explicou que o círculo preenchido de Things comunica proporção de tarefas concluídas; não confundir esse indicador de progresso com posição hierárquica. Nenhum preenchimento foi implementado neste teste.
+
+## Teste atual: A com emojis nas principais
+A pedido do usuário, testar emojis apenas nas listas principais, preservando o símbolo vetorial neutro das sublistas. Este teste substitui a orientação anterior de A inteiramente vetorial; não retorna aos emojis em todas as listas. Preservar alinhamento, pesos, divisórias e modelo livre. Emojis ficam associados à lista, estáveis ao renomear; sublistas não os exibem.

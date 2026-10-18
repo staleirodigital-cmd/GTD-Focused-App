@@ -39,3 +39,6 @@ O usuário rejeitou o experimento de emoji em todas as listas. Restaurar a base 
 
 ## Proposta A aplicada
 A diferenciação é visual e baseada na posição, sem alterar o modelo livre. O círculo das sublistas contém traços de lista e não preenchimento de progresso. O círculo de Things representa progresso de projetos; não usar esse significado para qualquer lista. Manter alinhamento, ritmo, pesos e divisórias da proposta.
+
+## Teste atual: A com emojis nas principais
+A pedido do usuário, testar emojis apenas nas listas principais, preservando o símbolo vetorial neutro das sublistas. Este teste substitui a orientação anterior de A inteiramente vetorial; não retorna aos emojis em todas as listas. Preservar alinhamento, pesos, divisórias e modelo livre. Emojis ficam associados à lista, estáveis ao renomear; sublistas não os exibem.
