@@ -46,3 +46,5 @@ Usuário escolheu aplicar a proposta A do estudo, com ícones vetoriais em vez d
 
 ## Teste atual: A com emojis nas principais
 A pedido do usuário, testar emojis apenas nas listas principais, preservando o símbolo vetorial neutro das sublistas. Este teste substitui a orientação anterior de A inteiramente vetorial; não retorna aos emojis em todas as listas. Preservar alinhamento, pesos, divisórias e modelo livre. Emojis ficam associados à lista, estáveis ao renomear; sublistas não os exibem.
+
+Hierarquia de peso: nome de lista principal sempre em seminegrito (600), com ou sem sublistas; nomes de sublistas em peso regular (400), inclusive quando selecionados. A posição define o peso, não o conteúdo.
