@@ -1,0 +1,25 @@
+import { readFileSync } from 'node:fs';
+import { Script } from 'node:vm';
+import assert from 'node:assert/strict';
+const html=readFileSync(new URL('../Clareza.html',import.meta.url),'utf8');
+const app=html.split('<script type="module">')[1]?.split('</script>')[0];
+assert.ok(app,'Application script exists');
+new Script(app);
+const model=app.slice(0,app.indexOf("const editor=$('#editor')")).replace('let state=migrate(read(localStorage))','let state=migrate(seed())');
+const assertions=`
+const action=state.items.find(i=>i.id==='a5');
+assert.ok(matches(action,'next'));assert.ok(matches(action,'rua'));
+for(const id of ['a1','a7','a8','a10','p1'])assert.ok(!matches(state.items.find(i=>i.id===id),'next'),id);
+assert.ok(matches(state.items.find(i=>i.id==='a10'),'someday'));
+const count=state.items.length;
+state.lists.push({id:'test-context',name:'Contexto de teste',group:'next'});
+const item=createItem(state,'Testar contexto','test-context');
+assert.equal(state.items.length,count+1);assert.ok(matches(item,'next'));assert.ok(matches(item,'test-context'));
+state.lists.find(l=>l.id==='test-context').group='waiting';
+assert.ok(!matches(item,'next'));assert.ok(matches(item,'waiting'));
+item.done=true;assert.ok(!matches(item,'waiting'));assert.ok(matches(item,'completed'));
+const listCount=state.lists.length;migrate(state);assert.equal(state.lists.length,listCount);assert.ok(valid(state));
+`;
+const {runInNewContext}=await import('node:vm');
+runInNewContext(model+assertions,{assert,globalThis:{crypto:{randomUUID:()=> 'test-item'}}});
+console.log('PASS: syntax, aggregate/context views, filtering, creation, reclassification, completion and migration.');

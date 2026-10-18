@@ -1,0 +1,1 @@
+Leia DESIGN.md antes de alterar a interface, os fluxos ou a IA. Clareza.html é o arquivo independente entregue ao usuário; mantenha-o executável sem dependências externas. Preserve dados na chave clareza.prototype.v1 e migre registros antigos sem duplicação nem perda. Agrupamentos e contextos são visões dos mesmos registros. Não voltar à divisão listas oficiais/suas listas.
