@@ -1,35 +1,39 @@
-# Contexto permanente · Clareza / GTD Focused App
+# Memória versionada do projeto · Clareza
 
-## Como retomar
-Leia este arquivo, AGENTS.md e DESIGN.md antes de agir. Não peça novamente ao usuário os conceitos já acordados. O repositório é https://github.com/staleirodigital-cmd/GTD-Focused-App (main). O protótipo independente é Clareza.html. O Pages está em https://staleirodigital-cmd.github.io/GTD-Focused-App/Clareza.html. Confira a publicação efetiva antes de dizer que uma mudança está disponível.
+## Retomada
+Ler AGENTS.md, DESIGN.md e este arquivo antes de mudanças. Repositório: https://github.com/staleirodigital-cmd/GTD-Focused-App (main). Pages: https://staleirodigital-cmd.github.io/GTD-Focused-App/Clareza.html. Confirmar a versão publicada antes de entregar o link. Clareza.html é a fonte executável independente atual.
 
-## Intenção e fundamentos acordados
-Criar um sistema pessoal inspirado no GTD, com o cuidado e fluidez de Things, Apple, Nubank e Airbnb. Things é referência de refinamento, não modelo a copiar nem estrutura obrigatória. O guia GTD de 2018 usa recursos de Things como recipientes para listas próprias; nosso produto deve representar essa intenção diretamente.
-Uma captura é uma coisa que tem atenção. O usuário define significado e intenção. Uma ação resolve um compromisso em um passo; um projeto representa um resultado que exige mais de uma ação, mesmo pequeno. Pode haver apenas uma próxima ação conhecida. Não contar checklist para inferir projeto. Lista é organização para uma finalidade e não vira projeto por conter itens.
-Agrupamentos Próximas ações, Projetos, Aguardando, Algum dia/Talvez e Referência são clicáveis. Contextos (Na rua, Em casa, No telefone, No computador, pessoas/reuniões) são listas dentro de Próximas ações. O agrupamento reúne registros; abrir contexto filtra sem cópia. Sublistas devem permitir organizar pessoas, equipes e outros recortes; o significado é herdado do agrupamento. Uma lista pode conter itens e sublistas. Não diferenciar listas oficiais de suas listas.
-Projetos abrem visão própria do resultado, suporte e ações relacionadas; edição nos detalhes. Ações aparecem no contexto e no projeto mantendo uma identidade. Esperas e possibilidades não poluem próximas ações.
+## Objetivo e entendimento consolidado
+Um espaço pessoal para praticar GTD com liberdade e refinamento comparável ao Things. O coração é o apoio ao fluxo de capturar, esclarecer, organizar, engajar e revisar, sem impor etapas obrigatórias da interface. A organização é meio; quem julga a confiança é a pessoa. Não marcar itens/projetos como errados por idade, texto curto ou falta de próxima ação.
+Usuário voltou deliberadamente à discussão estratégica porque nossa implementação tinha virado categorias fixas e um app de tarefas. O guia GTD para Things ignora parte da arquitetura nativa e constrói listas próprias sobre recursos do software. O princípio a incorporar é liberdade real para construir o sistema, não apenas flexibilidade dentro de categorias fixas.
 
-## UX acordada
-Mobile first, adaptado para tablet/desktop e preparado conceitualmente para futura base iOS/iPadOS/Android. HTML responsivo não é app nativo. Divulgação progressiva: lista mostra títulos/indicadores; nota aparece ao examinar item; operações revelam opções quando necessário. Sem breadcrumb. Ícones preenchidos, coerentes e originais (não copiar Inbox do Things). Refinamento por tipografia, ritmo, proporção e comportamento, não decoração. Não adicionar telas/burocracia para demonstrar metodologia. Contraste e consistência em claro/escuro.
-Uma criação Nova lista global; operações contextuais nas opções, sem vários + permanentes. Agrupamentos claramente clicáveis, contextos recuados e legíveis, sem recolhimento prematuro. Alvos de toque e foco visível.
-Captura global + e N sempre Inbox. Adicionar próxima ação é contextual e vincula projeto. Não repetir nome do projeto dentro do próprio projeto. Datas mostram seu significado (compromisso/prazo/reconsideração). Acompanhamento cria ação escrita pelo usuário e preserva espera. Concluir projeto não conclui ações em cascata. Reconsiderar depois move resultado, informa preservação de ações.
+## Decisões vigentes (substituem as primeiras versões)
+- Listas e sublistas são a mesma entidade, com posição editável. Podem ter itens e listas filhas. Listas independentes ficam em Meu espaço.
+- O template inicial é comum, não obrigatório. É possível renomear, mover e apagar também Projetos, Próximas ações, Aguardando, Algum dia/Talvez. Não recriar listas apagadas nem preservar uma taxonomia oculta.
+- Abrir lista-pai reúne seus registros e descendentes sem duplicação. Nenhuma semântica de compromisso é inferida pelo nome/destino.
+- Um projeto é resultado com mais de uma ação requerida, mesmo pequeno. Transformação explícita, conteúdo preservado; relação projeto-ação independente da árvore. Checklist não define projeto.
+- Inbox é o destino inicial da captura global, mas o seletor permite qualquer lista e criação inline. A orientação anterior de Inbox obrigatória foi revogada. Adicionar aqui mantém o contexto; relacionar ação a projeto é explícito.
+- Nova lista está disponível; não usar convite alto, tour, questionário ou tarefas fictícias. Nome e localização; Criar lista aqui pré-preenche pai. Encaminhar item deve permitir criar destino sem perder rascunho, inclusive no cancelamento.
+- Arrastar permite reorganização direta no desktop, com indicação antes/depois/dentro e proteção contra ciclos. Mover pelas opções e ordenar por botões são alternativas disponíveis.
+- UI: hierarquia por agrupamento, peso, espaço e divisórias; linhas alinhadas. NÃO usar recuos em cascata. Estruturas profundas são exploradas abrindo as listas.
+- Things é referência de cuidado visual, não copiar marca/Inbox. Ícones preenchidos próprios; tipografia, espaçamento, alinhamento e comportamento consistentes; sem breadcrumb; temas claro/escuro completos.
+- Ao abrir item, mostrar detalhes necessários. Na lista, só título/indicadores. Notas vazias não ocupam espaço até solicitadas.
+- Revisão pessoal, sem seção obrigatória ou roteiro julgando o sistema. Cadência semanal é recomendação, pode gerar convite futuro; ausência de registro não prova ausência de revisão. Respeitar ritmo e decisão de deixar projeto sem ação.
+- IA é auxiliar e pode surgir naturalmente nas jornadas. Pode estruturar discurso em proposta de plano/listas, apoiar clareza e questionar sem diagnosticar. Ex.: carro pode já estar agendado/entregue, não inventar telefonema. Texto curto pode ser suficientemente esclarecido. Propostas precisam ser distinguíveis de compromissos do usuário.
 
-## IA
-Apoiar clareza e revisão, não presumir contexto ou compromisso. Exemplo carro: pessoa pode já ter agendado, entregue, ou estar avaliando troca; não gerar telefonema/plano com base apenas na anotação. Assistência opcional, sem entrevista/bloqueio. Gestos como renomear/mover podem esclarecer. Hoje assistência é demonstrativa e identificada; sem modelo conectado.
+## Implementação atual
+Fonte HTML/CSS/JS independente; storage key clareza.prototype.v1 é preservada, mas payload agora usa version:2. Listas reais {id,name,parent,icon,format?}, sem group/categorias obrigatórias. Inbox é destino de captura e permanece como recipiente básico; Meu espaço e Concluídos são recursos de navegação, não listas de compromisso.
+Migração v1 materializa antigos agrupamentos implícitos, mantém IDs, notas, checklists, relações e conteúdo, salva cópia bruta em clareza.prototype.v1.before-v2. v2 não recria listas removidas. Import rejeita ciclos e referências inválidas; se dados não puderem ser lidos, os originais são preservados e gravação é bloqueada até recuperação/importação.
+Navegação mostra raízes e seus filhos imediatos com composição alinhada. Profundidade maior fica dentro da página de lista. Criação independente/contextual, edição de nome/localização, exclusão sem perda, ordenação e drag/drop. Seletor de destino compartilhado por captura e mover, com busca e criação inline preservando rascunho. Captura usa destino editável, sem inferir projeto. Checklists podem ser apresentação opcional de lista, com checked separado de done; checklist embutido continua.
+Projetos: visão própria com suporte e registros relacionados nas listas reais, conclusão explícita sem cascata, mover para qualquer lista. Roteiro fixo de revisão removido da navegação; a jornada correspondente será trabalhada depois. IA continua demonstrativa e identificada; não há modelo conectado.
+Sem conta, sincronização, notificações, calendário ou apps nativos. Dados permanecem no navegador, export/import JSON. Não alegar essas capacidades prontas.
 
-## Estado e verificação anteriores
-Arquivo independente HTML/CSS/JS com localStorage clareza.prototype.v1, export/import JSON, migração, projetos, notas, checklist, busca, datas, revisão inicial. Sem conta, sync, notificações nem integração calendário. Fonte principal contém JS em script type module e CSS embutido.
-Já houve teste simulado de captura durante projeto, ação na rua e espera. Problemas corrigidos: captura contextual indevida, significado de datas, repetição de projeto, conclusão/reconsideração, estados vazios. Código publicado no commit 69f8555bac931131add5fb8e897c77ab185feb84 antes desta etapa. Arquivos temporários de testes podem conter seletores/comportamentos antigos; não tratá-los como especificação.
+## Estado do trabalho e próxima conversa
+Usuário autorizou implementar a jornada livre e contextual com a referência visual enviada. Fazer verificações técnicas, não nova pesquisa/teste simulado de usabilidade. Próximo passo é ele ver e experimentar o resultado, compartilhar feedback e só então discutir simulação. Não avançar em IA/revisão/arquitetura nativa sem necessidade da jornada.
+Model checks e regressões funcionais cobrem criação independente, agregação, remoção de antigos agrupamentos, migração, preservação de texto na criação inline, drag/drop e conferência separada de conclusão. Não são evidência de validação com usuários.
 
-## Etapa atual e sequência explícita do usuário
-Desenvolver primeiro a jornada de setup/adaptação de listas e sublistas com cabeça de staff product designer, simplicidade, experiência e jobs do usuário. Objetivos: começar sem configuração obrigatória; adicionar contexto; criar Assuntos a tratar > Ana; renomear; mover/reordenar/remover listas preservando conteúdo.
-Depois de ver o primeiro resultado, o usuário fará seu próprio teste. Só depois discutir teste simulado. NÃO rodar agora teste simulado de usabilidade nem apresentar hipótese como pesquisa com usuário. Verificações técnicas (integridade, sintaxe, renderização) continuam necessárias.
+## Processo humano
+Agradecer feedback positivo, reconhecer conquistas e comemorar marcos com naturalidade. Não ser apenas execução automática. Quando usuário pede espaço para feedback, ouvir e alinhar antes de alterar. Evitar pedir novamente decisões consolidadas.
 
-## Colaboração
-Agradecer feedback, reconhecer conquistas e celebrar marcos com naturalidade. Não executar automaticamente quando usuário quer conversar ou dar feedback. Escutar e alinhar antes de novas alterações nessas situações. Não repetir confirmações já autorizadas.
-
-## Memória e arquivos
-Este documento e DESIGN.md/AGENTS.md devem acompanhar o código no GitHub para sobreviver à troca de ambiente. Arquivos locais sozinhos podem se perder numa reinicialização; não prometer memória ilimitada ou persistência de /workspace. Guias originais guardados em /workspace/reference/gtd/originals, textos em /workspace/reference/gtd/text e índice com SHA-256 em /workspace/reference/gtd/index.json. Pacote de recuperação: /workspace/Clareza-guias-de-referencia.zip. Não incluir PDFs ou transcrições integrais no repositório público; manter referência e síntese próprias em docs/GTD-REFERENCES.md.
-
-## Implementação da etapa de setup
-Listas agora têm parent; group é mantido para compatibilidade e derivado do ancestral. Agregações percorrem descendentes sem cópia. Criar lista tem nome e localização sob demanda; Criar sublista pré-preenche pai atual. Opções permitem renomear, mover estrutura, reordenar irmãos e remover sem apagar itens/sublistas (realoca no pai). Migração idempotente preserva dados e importação rejeita ciclos. Novo seed tem quatro contextos e zero tarefas; convite inicial é opcional. Organizar listas está nas opções da Inbox/grupos e opções/dados. Modelo e renderização foram conferidos tecnicamente; NÃO foi feita nova simulação de usabilidade. Próximo passo: usuário vê o resultado e faz seu próprio teste; aguardar feedback.
+## Fontes e recuperação
+Referência Things: https://culturedcode.com/things/support/. Guias locais em /workspace/reference/gtd/originals, textos em /workspace/reference/gtd/text, índice com SHA-256 em /workspace/reference/gtd/index.json. Síntese própria rastreável em docs/GTD-REFERENCES.md. Pacote privado de recuperação: /workspace/Clareza-projeto-e-referencias.zip. PDFs integrais/transcrições não são publicados no repositório público. Documentação no GitHub sobrevive à troca de ambiente; não prometer persistência ilimitada de /workspace ou memória fora destes arquivos.

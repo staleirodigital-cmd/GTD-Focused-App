@@ -1,39 +1,32 @@
 # Clareza · GTD Focused App
 
-Protótipo de um sistema pessoal inspirado no Getting Things Done, com listas flexíveis, contextos e divulgação progressiva. Mobile first, com adaptação para tablet e desktop.
+Um espaço pessoal para listas, lembretes e projetos, inspirado no GTD. A organização inicial é um template: você pode mudar o nome, mover e remover qualquer lista sugerida.
 
-## Experimentar
+[Abrir o protótipo](https://staleirodigital-cmd.github.io/GTD-Focused-App/Clareza.html)
 
-Abra **Clareza.html** no navegador. O arquivo é independente e não exige instalação nem dependências externas.
+## Usar localmente
+Abra `Clareza.html` no navegador, sem instalação ou dependências externas. Para servir por HTTP: `python3 -m http.server 4173`, depois abra `http://localhost:4173/Clareza.html`.
 
-Para servir localmente, execute `python3 -m http.server 4173` na raiz e abra `http://localhost:4173/Clareza.html`.
+## O que funciona
+- Captura rápida com Inbox como destino inicial editável. Busca de destino e criação de lista no mesmo fluxo, sem perder o texto.
+- Listas independentes e listas dentro de listas. Abrir o conjunto ou o recorte usa os mesmos registros, sem duplicação.
+- Nome e localização editáveis; ordenação, movimentação e remoção com preservação de conteúdo e desfazer.
+- Arrastar no desktop: centro para inserir dentro; bordas superior/inferior para ordenar. As opções de localização e os botões de ordem são alternativas explícitas para toque e teclado.
+- Hierarquia visual por conjuntos alinhados, sem árvore de recuos. Mobile first, adaptado para tablet/desktop, claro e escuro.
+- Notas, checklists embutidos e apresentação opcional de lista como checklist. Conferir um item de checklist não o conclui como compromisso.
+- Transformação explícita de item em projeto e relações projeto-ação, sem depender da lista onde estão. Mover para Projetos não transforma automaticamente um item.
+- Busca, datas com significado explícito, conclusão, exportação e importação JSON.
+- Assistência demonstrativa identificada, sem modelo de IA conectado.
 
-## Experiência atual
+## Dados e migração
+Os dados ficam neste navegador, sem sincronização. A chave `clareza.prototype.v1` foi mantida e o conteúdo passou para versão 2. A migração mantém IDs e relações e guarda uma cópia bruta anterior em `clareza.prototype.v1.before-v2`. Listas removidas não reaparecem. Exporte cópias dos seus dados. Remover uma lista preserva itens e sublistas: conteúdo sobe ao pai; na raiz, itens vão para Inbox e sublistas ficam em Meu espaço.
 
-- Captura imediata, edição, conclusão e desfazer.
-- Próximas ações como visão geral agrupada por contextos; abrir um contexto filtra os mesmos registros, sem duplicação.
-- Agrupamentos de Projetos, Aguardando, Algum dia/Talvez e Referência, com criação e reclassificação de listas.
-- Projetos com notas, checklists e ações relacionadas acessíveis também nos contextos.
-- Busca, datas com significado explícito e roteiro inicial de revisão.
-- Dados no navegador, exportação/importação JSON e migração dos registros do protótipo anterior.
-- Assistência de esclarecimento demonstrativa, identificada na interface. Nenhum modelo de IA está conectado.
+## Desenvolvimento
+`npm test` executa verificações sem dependências: sintaxe, agregação genérica, intenção explícita, listas livres, exclusão sem perda, ciclos e migração/backup. Os testes de navegador em `tests/free-lists-*.cjs` são regressões técnicas opcionais com Playwright e Chromium; não constituem validação de usabilidade. Use `CHROMIUM_PATH` para indicar um executável instalado ou instale o Chromium do Playwright.
 
-## Organização inicial
+Leia [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md), [DESIGN.md](DESIGN.md) e [a síntese das referências](docs/GTD-REFERENCES.md). As decisões recentes substituem o modelo inicial de categorias fixas.
 
-O primeiro acesso começa sem tarefas fictícias, com quatro contextos editáveis. É possível criar listas e sublistas, alterar nomes e localização, reordenar irmãos e remover listas preservando o conteúdo no nível acima. O menu de opções oferece **Organizar listas**. Configurar é opcional: a captura continua disponível desde o primeiro momento.
+## Limites
+Não há conta, sincronização, notificações ou integração com calendário. O HTML responsivo não é um aplicativo nativo iOS/iPadOS/Android. O roteiro fixo antigo de revisão foi retirado; a experiência de revisão será desenhada no contexto da jornada, sem exigir sessão ou declarar a saúde do sistema. A primeira avaliação de uso desta versão será do usuário antes de uma nova simulação.
 
-## Princípios
-
-Leia [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md), [DESIGN.md](DESIGN.md) e [a síntese das referências](docs/GTD-REFERENCES.md) para retomar as decisões antes de alterar o produto. O objetivo é oferecer a liberdade do papel com uma interface refinada, sem burocratizar o GTD. A IA ajuda a esclarecer; contexto, intenção e compromisso pertencem ao usuário.
-
-## Verificação
-
-Com Node.js instalado, execute `npm test` (sem instalar dependências). O teste verifica a sintaxe do aplicativo e a lógica de agregação, contextos, exclusão de itens não executáveis, migração e reclassificação.
-
-A conferência visual completa no preview continua pendente. As verificações de dados não substituem testes de usabilidade e acessibilidade.
-
-## Limites do protótipo
-
-Os dados ficam no armazenamento local do navegador; não há conta ou sincronização. Faça exportações para manter cópias. Datas não geram notificações. A revisão não lê calendários nem materiais externos. O HTML atual não é um aplicativo nativo para iPhone, iPad ou Android; essa arquitetura será definida na evolução do produto.
-
-Os dados de exemplo fazem parte do código. Registros inseridos pelo usuário no navegador não são enviados ao repositório. Os PDFs de referência não estão incluídos.
+Dados inseridos no navegador não são enviados ao repositório. Os PDFs integrais de referência não estão incluídos no repositório público; a documentação contém sínteses próprias.

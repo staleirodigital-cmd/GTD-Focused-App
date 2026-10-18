@@ -1,32 +1,35 @@
 # Clareza · princípios de produto e experiência
 
-## Orientação permanente
-Simplicidade extremamente refinada. Mostrar o necessário para o objetivo atual e revelar possibilidades no contexto em que ajudam. Refino vem de tipografia, proporção, ritmo, alinhamento e comportamento; não de decoração. Ícones preenchidos, coerentes e próprios. Não usar breadcrumb na navegação principal. Garantir contraste e superfícies coerentes nos temas claro e escuro.
+## Premissa central
+O usuário avalia a confiança no próprio sistema. A ferramenta guarda, preserva e apresenta fielmente os registros, facilitando captura, esclarecimento, organização, engajamento e revisão. Ausência de ação, texto curto e tempo sem movimento não são diagnósticos de erro. A organização serve à confiança; classificações e métricas não substituem o julgamento da pessoa.
+
+## Liberdade e método
+O GTD é praticado pela pessoa. A ferramenta é um espaço aberto para tangibilizar essa prática. A organização inicial é um template editável e removível, incluindo Projetos, Próximas ações, Aguardando, Algum dia/Talvez e seus contextos. Não manter categorias obrigatórias escondidas depois que o usuário as remove.
+Listas independentes e listas dentro de listas usam o mesmo modelo. A posição não determina o significado dos itens. Uma lista pode conter itens e outras listas; abrir o conjunto reúne os mesmos registros, sem cópia. Sonhos, referências, checklists ou assuntos podem existir diretamente em Meu espaço.
+Projeto é um resultado desejado que exige mais de uma ação, mesmo pequeno e com apenas um próximo passo conhecido. Checklist não determina projeto. A transformação em projeto é explícita; mover para uma lista chamada Projetos não transforma automaticamente um item. A relação entre resultado e ações é independente da organização em listas.
+
+## Experiência e refinamento
+Simplicidade extremamente refinada. Mostrar o necessário para o objetivo atual e revelar possibilidades no contexto exato em que ajudam. Tipografia, alinhamento óptico, ritmo, proporção e comportamento consistente têm prioridade sobre decoração. Things é referência de qualidade, não estrutura obrigatória nem identidade a copiar. Ícones preenchidos, coerentes e próprios. Sem breadcrumb na navegação principal.
+Hierarquia por composição de conjuntos: título com mais peso, linhas alinhadas, espaço e divisórias discretas. Não usar encadeamento de recuos em cascata. Profundidades maiores são exploradas dentro das listas; não comprimir tudo na navegação. Destinos têm áreas de toque confortáveis, seleção inequívoca, foco visível e nomes completos acessíveis. Claro/escuro devem tratar fundo, texto, campos e controles como um conjunto.
 
 ## Divulgação progressiva
-Na lista: títulos e indicadores discretos. Ao abrir o item: detalhes relevantes. Notas e checklists só ocupam espaço quando usados. Opções específicas aparecem ao escolher a operação. A IA não deve dominar a lista nem exigir conversa para operações simples.
+Na lista: título e indicadores úteis. No item: notas e detalhes conforme existam ou sejam solicitados. Opções específicas aparecem ao escolher a operação. Evitar campos vazios, mensagens educativas permanentes, tours, questionários e tarefas fictícias.
+Nova lista é um acesso estável e descobrível. Criar lista aqui é contextual e preenche o destino. Não espalhar um + por seção. Em um destino de item, permitir buscar e criar lista sem perder o rascunho. Cancelar a criação deve permitir retomar o encaminhamento.
 
-## Listas, contextos e agrupamentos
-Próximas ações, Projetos, Aguardando e Algum dia/Talvez são agrupamentos navegáveis. Referência guarda materiais sem compromisso de ação. O usuário cria e adapta listas dentro desses agrupamentos.
-Próximas ações reúne ações disponíveis, agrupadas pelos contextos. Na rua, Em casa, No telefone, No computador e Conversar com Ana são exemplos de contextos. Abrir um contexto filtra os mesmos registros; não duplica ações. A visão geral exclui Inbox, esperas, possibilidades, referências e resultados de projetos.
-Em Projetos, cada resultado pode ser aberto para ver suporte e ações relacionadas. Uma ação vinculada continua disponível em seu contexto. Projetos incubados ou aguardando ficam no agrupamento correspondente, fora da visão de projetos ativos.
-Não separar listas oficiais de listas do usuário. O agrupamento expressa o significado; a organização é adaptável. Ideias não são ações executáveis por terem um tema ou nome de contexto. A migração desta versão coloca a lista de exemplo Ideias para a casa em Algum dia/Talvez; o usuário pode reclassificá-la.
+## Captura e manutenção
+O + global e N abrem captura com Inbox como destino inicial, não obrigatório. O usuário pode selecionar qualquer lista ou criar uma na hora. Adicionar aqui parte da lista atual; adicionar uma ação relacionada preserva o vínculo explícito com o projeto. Não converter captura em tarefa/plano/projeto por inferência.
+Criar pede nome; localização vem preenchida e é editável sob demanda. Mover para Meu espaço torna a lista independente. Renomear, mover e ordenar são operações comuns, sem burocracia. Arrastar é um atalho no desktop; as opções de localização e os botões de ordem são alternativas explícitas para toque/teclado/acessibilidade. Distinguir visualmente inserir antes, depois e dentro; impedir ciclos; oferecer desfazer.
+Remover uma lista nunca apaga silenciosamente seu conteúdo: itens sobem para a lista-pai; sublistas sobem um nível. Se a lista era independente, itens vão para Inbox e sublistas ficam em Meu espaço, com explicação antes da remoção. Lista vazia pode ser removida diretamente com desfazer.
+Checklist é uma apresentação opcional da lista. Marcar um item de checklist não significa concluir um compromisso; usar estado de conferência separado. Checklist dentro de um item permanece disponível. Não exigir formato na criação.
 
-## GTD e IA
-Captura é algo que tem atenção do usuário. Uma ação encerra o compromisso em um passo; projeto é um resultado que exige mais de uma ação, mesmo pequeno e com apenas uma próxima ação conhecida. Checklist não determina projeto. Não exigir planejamento completo, campos obrigatórios ou esclarecimento para operar. Renomear e mover podem expressar a decisão suficiente. Preservar conteúdo e identidade nas transformações.
-IA ajuda a esclarecer, recuperar contexto e revisar; intenção e compromisso são do usuário. Não inventar contexto nem gerar planos automaticamente. Identificar demonstrações sem IA conectada.
+## Projetos, datas e revisão
+Projetos abrem uma visão do resultado, suporte e lembretes relacionados agrupados pelas listas reais do usuário, sem repetir o nome do projeto em cada linha. Concluir resultado não conclui ações em cascata. O usuário escolhe para onde mover um resultado; não pressupor a existência de Algum dia/Talvez.
+Datas comunicam o significado escolhido (compromisso, prazo, reconsideração). Estados vazios informam, sem incentivar preencher o espaço.
+A revisão é pessoal e acontece ao examinar os registros. Não impor sessão, roteiro ou frequência obrigatória, nem avaliar a saúde do sistema. A recomendação semanal pode orientar convites futuros, distinguindo ausência de revisão registrada de ausência real de revisão. O roteiro fixo antigo foi retirado desta navegação; a experiência de revisão será desenhada na jornada correspondente.
 
-## Plataformas e revisão
-Mobile first com adaptação intencional para tablet e desktop, toque confortável, teclado e acessibilidade. Avaliar cada mudança pelo objetivo do usuário, necessidade de cada elemento, clareza da navegação, agilidade, preservação dos dados e consistência entre visões.
+## IA
+Auxiliar, não decisora nem base da arquitetura. Pode organizar uma fala longa em proposta de listas/plano, apoiar clareza e revisão ou recuperar contexto. Propostas não são compromissos assumidos automaticamente. Não julgar um lembrete pela quantidade de detalhes. Perguntas e intervenções são opcionais e respeitam a resposta de manter algo como está. Hoje a assistência é demonstrativa e identificada, sem modelo conectado.
 
-## Navegação refinada
-Agrupamentos são destinos clicáveis com ícone e alvo completo. Contextos usam recuo discreto e peso confortável, sem aparência desabilitada. A seleção identifica um único destino; o ícone do agrupamento mantém orientação quando um filho está aberto. Não acrescentar recolhimento sem necessidade demonstrada. Um único Nova lista recebe o agrupamento atual como padrão. Projetos abrem uma visão do resultado, notas e ações relacionadas; edição fica em Detalhes do projeto. Manter alvos de toque confortáveis, foco visível, nomes truncados somente na navegação e contraste nos dois temas.
-
-## Captura e atualização de compromissos
-O botão global de captura e o atalho N sempre guardam na Inbox, sem inferir projeto ou ação. Adicionar aqui e Adicionar próxima ação são operações contextuais distintas. Datas comunicam compromisso, prazo ou reconsideração também nas listas. Na página de um projeto, não repetir seu nome em cada ação. Permitir concluir o resultado sem concluir automaticamente ações relacionadas. Acompanhamento de uma espera é uma nova ação escrita pelo usuário, preservando a espera original. Estados vazios informam o recorte sem incentivar preenchimento.
-
-## Setup e sublistas
-A chegada não exige configuração e não insere tarefas fictícias. Contextos iniciais são editáveis. Um convite opcional permite ajustar listas ou começar pela captura. Usuários existentes mantêm registros e organização.
-Criar lista pede nome; a localização vem preenchida e pode ser alterada sob demanda. Criar sublista é a mesma operação, com a lista atual como destino. Listas podem conter itens e outras listas. Pais agregam os registros descendentes sem cópia; filhos herdam o significado do agrupamento. Nenhuma profundidade transforma lista em projeto.
-Oferecer renomear, mover a estrutura, reordenar irmãos com controles acessíveis e remover preservando itens/sublistas no nível acima. Impedir ciclos e proteger migração/importação. A entrada Organizar listas é acessível pelas opções e no convite inicial. Não exigir gestos escondidos, tags ou entrevista de IA para estruturar o sistema.
-Aguardar o primeiro teste do usuário antes de uma nova simulação de usabilidade. Verificações técnicas não são pesquisa de usabilidade.
+## Plataformas e processo
+Mobile first, adaptado para tablet/desktop. Não confundir HTML responsivo com app nativo iPhone/iPad/Android. Guardar dados e relações na evolução e testar migrações. O código atual é protótipo local no navegador, sem sincronização.
+Desenvolver primeiro; usuário vê e testa; só depois realizar teste simulado de usabilidade quando combinado. Verificações funcionais e visuais não são pesquisa com usuários. Agradecer feedback e reconhecer marcos com naturalidade; dar espaço à conversa sem executar automaticamente.

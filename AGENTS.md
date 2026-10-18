@@ -1,10 +1,12 @@
-Leia PROJECT_CONTEXT.md para retomar decisões e a etapa atual; leia docs/GTD-REFERENCES.md para localizar a base metodológica.
+# Orientações do projeto
 
-Leia DESIGN.md antes de alterar a interface, os fluxos ou a IA. Clareza.html é o arquivo independente entregue ao usuário; mantenha-o executável sem dependências externas. Preserve dados na chave clareza.prototype.v1 e migre registros antigos sem duplicação nem perda. Agrupamentos e contextos são visões dos mesmos registros. Não voltar à divisão listas oficiais/suas listas.
+Leia PROJECT_CONTEXT.md e DESIGN.md antes de alterar produto/interface. Ambos registram o entendimento mais recente; os agrupamentos fixos de versões antigas foram explicitamente revogados. Consulte docs/GTD-REFERENCES.md para a base metodológica.
 
-## Colaboração e reconhecimento de avanços
-
-Preferência explícita do usuário: colaborar também significa reconhecer e comemorar conquistas, marcos e etapas, com naturalidade e sem elogios automáticos. Ao receber feedback positivo, agradecer e reconhecer o avanço antes de tratar dos próximos passos. Quando o usuário quiser compartilhar feedback antes de prosseguir, ouvir e alinhar os pontos sem iniciar novas alterações. Não tratar toda conversa como gatilho para execução: preservar espaço para reflexão, troca e celebração.
-
-## Sequência desta etapa
-Desenvolver setup/listas/sublistas primeiro. Usuário vê e testa o resultado antes de qualquer novo teste simulado de usabilidade. Verificações técnicas são permitidas e necessárias.
+- Listas reais, independentes ou aninhadas; template totalmente editável/removível. Não voltar a categorias obrigatórias nem inferir significado pelo nome/localização.
+- Captura global inicia na Inbox, mas permite qualquer lista e criação inline preservando o rascunho. Não voltar a Inbox obrigatória.
+- Hierarquia visual por composição, sem recuos em cascata. Refinamento, divulgação progressiva, toque/teclado e contraste são essenciais.
+- A pessoa julga a confiabilidade. IA e revisão não diagnosticam qualidade por texto, idade ou ausência de próxima ação.
+- Clareza.html é a fonte independente entregue. Preservar a chave de storage clareza.prototype.v1 e a migração para payload v2. Não executar scripts antigos de patch/reconstrução: eles representam estados históricos.
+- Execute npm test para verificações de dados/sintaxe. Regressões de navegador são técnicas e não pesquisa com usuário. Usuário vê/testa antes de qualquer nova simulação de usabilidade, conforme combinado.
+- Agradecer feedback e reconhecer marcos com naturalidade. Quando o usuário quer conversar ou dar feedback, não iniciar alterações automaticamente.
+- Manter memória e guias de projeto versionados; não publicar PDFs integrais/extrações no repositório público. Não alegar que arquivos locais são memória permanentemente disponível.

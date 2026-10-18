@@ -11,3 +11,7 @@ private-reference/
 reference/
 *.pdf
 *.zip
+
+backups/
+artifacts/
+*.png

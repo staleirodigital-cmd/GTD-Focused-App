@@ -1,1 +1,9 @@
-{"name":"gtd-focused-app","version":"0.2.0","private":true,"description":"Clareza: protótipo de listas, contextos e projetos inspirado no GTD","scripts":{"test":"node scripts/check.mjs"}}
+{
+  "name": "gtd-focused-app",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Clareza: protótipo de listas, contextos e projetos inspirado no GTD",
+  "scripts": {
+    "test": "node scripts/check.mjs"
+  }
+}
