@@ -35,4 +35,7 @@ Mobile first, adaptado para tablet/desktop. Não confundir HTML responsivo com a
 Desenvolver primeiro; usuário vê e testa; só depois realizar teste simulado de usabilidade quando combinado. Verificações funcionais e visuais não são pesquisa com usuários. Agradecer feedback e reconhecer marcos com naturalidade; dar espaço à conversa sem executar automaticamente.
 
 ## Benchmark e alternativas de navegação
-O usuário rejeitou o experimento de emoji em todas as listas. Restaurar a base vetorial sem apagar dados ou refazer a estrutura. Estudo visual separado em Estudo-navegacao.html compara três alternativas; nenhuma está escolhida como solução definitiva. Consultar docs/BENCHMARK-NAVIGATION.md. Não copiar os ícones de progresso nem a taxonomia áreas/projetos de Things como hierarquia obrigatória.
+O usuário rejeitou o experimento de emoji em todas as listas. Restaurar a base vetorial sem apagar dados ou refazer a estrutura. Estudo visual separado em Estudo-navegacao.html compara três alternativas. O usuário escolheu aplicar A como próximo teste: ícones vetoriais próprios nas listas principais e um símbolo neutro comum nas sublistas, sem emojis. Consultar docs/BENCHMARK-NAVIGATION.md. Não copiar os ícones de progresso nem a taxonomia áreas/projetos de Things como hierarquia obrigatória.
+
+## Proposta A aplicada
+A diferenciação é visual e baseada na posição, sem alterar o modelo livre. O círculo das sublistas contém traços de lista e não preenchimento de progresso. O círculo de Things representa progresso de projetos; não usar esse significado para qualquer lista. Manter alinhamento, ritmo, pesos e divisórias da proposta.

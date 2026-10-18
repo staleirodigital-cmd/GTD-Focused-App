@@ -15,10 +15,10 @@ Cada lista ganhou uma silhueta, cor e massa visual independente. O mecanismo que
 
 ## Alternativas no estudo visual
 A. **Ícones por nível:** listas principais com ícones próprios; sublistas com um símbolo neutro e repetido. Mais próximo do contraste da referência. Risco: escolha de ícones principais pode virar manutenção; a relação precisa continuar evidente sem depender de cor.
-B. **Coleções e listas:** símbolos da mesma família para listas que reúnem listas e para listas simples. Distinção estrutural, não classificação de GTD nem tipo obrigatório. Recomendada como hipótese inicial para a flexibilidade do Clareza; observar se formas discretas ficam reconhecíveis.
+B. **Coleções e listas:** símbolos da mesma família para listas que reúnem listas e para listas simples. Distinção estrutural, não classificação de GTD nem tipo obrigatório. Inicialmente recomendada como hipótese para a flexibilidade do Clareza; observar se formas discretas ficam reconhecíveis.
 C. **Hierarquia editorial:** ícones nas principais e nenhum nas sublistas, mantendo alinhamento textual, títulos fortes, ritmo e seleção. Menor ruído, mas maior dependência da composição com nomes longos/repetidos e estruturas extensas.
 
-As três propostas usam mesmo conteúdo, ordem, seleção e áreas de toque para comparação. Estudo em Estudo-navegacao.html, separado do aplicativo e sem dados reais. Nenhuma alternativa foi adotada como direção definitiva. Não aplicar emoji a todas as listas novamente.
+As três propostas usam mesmo conteúdo, ordem, seleção e áreas de toque para comparação. Estudo em Estudo-navegacao.html, separado do aplicativo e sem dados reais. O usuário escolheu aplicar A como teste no aplicativo; ainda não é uma validação definitiva. Não aplicar emoji a todas as listas novamente.
 
 ## Fontes oficiais
 - https://culturedcode.com/things/support/articles/6378414/ — projetos e áreas.

@@ -40,3 +40,6 @@ Referência Things: https://culturedcode.com/things/support/. Guias locais em /w
 
 ## Feedback visual mais recente
 O usuário rejeitou os emojis em todas as listas e pediu removê-los. Base vetorial restaurada, preservando modelo livre e dados. Pediu benchmark com Things e três formas visuais de distinguir listas e sublistas sem copiar sua taxonomia. Estudo separado em Estudo-navegacao.html para comparar: A ícones próprios nas principais e símbolo neutro nas sublistas; B símbolos estruturais de coleção/lista; C hierarquia tipográfica sem ícones nas sublistas. Ainda não há escolha definitiva. Benchmark no print fornecido e documentação oficial, não teste de usabilidade com participantes.
+
+## Escolha mais recente
+Usuário escolheu aplicar a proposta A do estudo, com ícones vetoriais em vez de emojis. Listas principais mantêm identidade própria; sublistas usam um símbolo neutro comum, circular com traços internos. Preservar composição, modelo livre e fluxos. Usuário explicou que o círculo preenchido de Things comunica proporção de tarefas concluídas; não confundir esse indicador de progresso com posição hierárquica. Nenhum preenchimento foi implementado neste teste.
