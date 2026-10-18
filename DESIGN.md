@@ -18,3 +18,6 @@ IA ajuda a esclarecer, recuperar contexto e revisar; intenção e compromisso s�
 
 ## Plataformas e revisão
 Mobile first com adaptação intencional para tablet e desktop, toque confortável, teclado e acessibilidade. Avaliar cada mudança pelo objetivo do usuário, necessidade de cada elemento, clareza da navegação, agilidade, preservação dos dados e consistência entre visões.
+
+## Navegação refinada
+Agrupamentos são destinos clicáveis com ícone e alvo completo. Contextos usam recuo discreto e peso confortável, sem aparência desabilitada. A seleção identifica um único destino; o ícone do agrupamento mantém orientação quando um filho está aberto. Não acrescentar recolhimento sem necessidade demonstrada. Um único Nova lista recebe o agrupamento atual como padrão. Projetos abrem uma visão do resultado, notas e ações relacionadas; edição fica em Detalhes do projeto. Manter alvos de toque confortáveis, foco visível, nomes truncados somente na navegação e contraste nos dois temas.
