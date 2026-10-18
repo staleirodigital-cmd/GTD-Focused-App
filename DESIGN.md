@@ -9,7 +9,7 @@ Listas independentes e listas dentro de listas usam o mesmo modelo. A posição 
 Projeto é um resultado desejado que exige mais de uma ação, mesmo pequeno e com apenas um próximo passo conhecido. Checklist não determina projeto. A transformação em projeto é explícita; mover para uma lista chamada Projetos não transforma automaticamente um item. A relação entre resultado e ações é independente da organização em listas.
 
 ## Experiência e refinamento
-Simplicidade extremamente refinada. Mostrar o necessário para o objetivo atual e revelar possibilidades no contexto exato em que ajudam. Tipografia, alinhamento óptico, ritmo, proporção e comportamento consistente têm prioridade sobre decoração. Things é referência de qualidade, não estrutura obrigatória nem identidade a copiar. Ícones preenchidos, coerentes e próprios. Sem breadcrumb na navegação principal.
+Simplicidade extremamente refinada. Mostrar o necessário para o objetivo atual e revelar possibilidades no contexto exato em que ajudam. Tipografia, alinhamento óptico, ritmo, proporção e comportamento consistente têm prioridade sobre decoração. Things é referência de qualidade, não estrutura obrigatória nem identidade a copiar. Iconografia coerente e própria; no experimento atual, emojis únicos identificam listas. Sem breadcrumb na navegação principal.
 Hierarquia por composição de conjuntos: título com mais peso, linhas alinhadas, espaço e divisórias discretas. Não usar encadeamento de recuos em cascata. Profundidades maiores são exploradas dentro das listas; não comprimir tudo na navegação. Destinos têm áreas de toque confortáveis, seleção inequívoca, foco visível e nomes completos acessíveis. Claro/escuro devem tratar fundo, texto, campos e controles como um conjunto.
 
 ## Divulgação progressiva
@@ -33,3 +33,6 @@ Auxiliar, não decisora nem base da arquitetura. Pode organizar uma fala longa e
 ## Plataformas e processo
 Mobile first, adaptado para tablet/desktop. Não confundir HTML responsivo com app nativo iPhone/iPad/Android. Guardar dados e relações na evolução e testar migrações. O código atual é protótipo local no navegador, sem sincronização.
 Desenvolver primeiro; usuário vê e testa; só depois realizar teste simulado de usabilidade quando combinado. Verificações funcionais e visuais não são pesquisa com usuários. Agradecer feedback e reconhecer marcos com naturalidade; dar espaço à conversa sem executar automaticamente.
+
+## Experimento visual atual: emojis
+Usuário pediu testar emojis em todas as listas e sublistas, cada lista com um emoji único no sistema pessoal. Esta decisão substitui temporariamente a preferência anterior por ícones preenchidos para listas. Preservar hierarquia por composição, tipografia, espaço e divisórias; não usar emoji diferente como único indicador de lista-pai. Atribuições devem ser estáveis em renomeações, movimentações e recarga, sem significado obrigatório e sem duplicação na criação/importação. O mesmo emoji acompanha a lista no menu, título e seletores. Renderização varia por plataforma; avaliar o resultado com o usuário.

@@ -7,7 +7,7 @@ assert.ok(app);new Script(app);
 const prefix=app.slice(0,app.indexOf("const editor=$('#editor')"));
 const legacy=readFileSync(new URL('../tests/legacy-seed.js',import.meta.url),'utf8').replace('function seed()','function legacySeed()');
 const tests=`
-assert.ok(valid(state));assert.equal(state.version,2);assert.equal(state.items.length,0);
+assert.ok(valid(state));assert.equal(new Set(state.lists.map(l=>l.emoji)).size,state.lists.length);const emojisBefore=Object.fromEntries(state.lists.map(l=>[l.id,l.emoji]));ensureEmojis(state);assert.ok(state.lists.every(l=>l.emoji===emojisBefore[l.id]));assert.equal(state.version,2);assert.equal(state.items.length,0);
 state.lists.push({id:'dreams',name:'Sonhos',parent:null},{id:'talk',name:'Assuntos',parent:null},{id:'ana',name:'Ana',parent:'talk'},{id:'team',name:'Equipe',parent:'talk'});
 const dream=createItem(state,'Conhecer o Japão','dreams');assert.ok(matches(dream,'dreams'));assert.ok(!dream.kind);
 const a=createItem(state,'Combinar férias','ana');assert.ok(matches(a,'talk'));assert.ok(matches(a,'ana'));assert.ok(!matches(a,'next'));
@@ -16,7 +16,7 @@ a.list='projects';assert.ok(!a.kind);assert.equal(a.project,undefined);convertPr
 const r=createItem(state,'Comprar pão','rua');const total=state.items.length;assert.equal(removeListData('next'),'space');assert.equal(state.items.length,total);assert.equal(r.list,'rua');assert.equal(state.lists.find(l=>l.id==='rua').parent,null);assert.ok(!state.lists.some(l=>l.id==='next'));assert.ok(!migrate(state).lists.some(l=>l.id==='next'));assert.ok(valid(state));
 assert.equal(removeListData('talk'),'space');assert.equal(state.lists.find(l=>l.id==='ana').parent,null);assert.equal(a.list,'dreams');assert.ok(valid(state));
 state.items.push({id:'direct',title:'Preservar',list:'dreams',checklist:[],done:false});assert.equal(removeListData('dreams'),'space');assert.equal(state.items.find(i=>i.id==='direct').list,'inbox');assert.equal(state.items.length,total+1);assert.equal(removeListData('inbox'),null);
-const old=legacySeed();const original=JSON.stringify(old);const m=migrate(old);assert.equal(JSON.stringify(old),original);assert.ok(valid(m));assert.equal(m.items.length,old.items.length);assert.ok(m.lists.some(l=>l.id==='projects'));assert.equal(JSON.stringify(migrate(m)),JSON.stringify(m));
+ensureEmojis(state);assert.equal(new Set(state.lists.map(l=>l.emoji)).size,state.lists.length);const duplicated=seed();duplicated.lists.forEach(l=>l.emoji='🌈');ensureEmojis(duplicated);assert.equal(new Set(duplicated.lists.map(l=>l.emoji)).size,duplicated.lists.length);const old=legacySeed();const original=JSON.stringify(old);const m=migrate(old);assert.equal(JSON.stringify(old),original);assert.ok(valid(m));assert.equal(m.items.length,old.items.length);assert.ok(m.lists.some(l=>l.id==='projects'));assert.equal(JSON.stringify(migrate(m)),JSON.stringify(m));
 const bad=seed();bad.lists.push({id:'x',name:'X',parent:'y'},{id:'y',name:'Y',parent:'x'});assert.ok(!valid(bad));const badParent=seed();badParent.lists[2].parent='missing';assert.ok(!valid(badParent));
 const store=new Map([[key,original]]);const data=read({getItem:k=>store.get(k),setItem:(k,v)=>store.set(k,v)});assert.equal(data.version,2);assert.equal(store.get(key+'.before-v2'),original);assert.equal(store.get(key),original);
 const broken=new Map([[key,'broken']]);read({getItem:k=>broken.get(k),setItem:(k,v)=>broken.set(k,v)});assert.equal(broken.get(key),'broken');assert.ok(storageBlocked);
