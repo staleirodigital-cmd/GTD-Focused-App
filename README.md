@@ -33,3 +33,5 @@ Dados inseridos no navegador não são enviados ao repositório. Os PDFs integra
 
 ## Identidade visual
 A direção D aprovada é a identidade principal: objetos ilustrados autorais, materiais e paleta quentes, busca tátil e hierarquia por composição. Os estudos separados continuam disponíveis apenas como referência.
+
+Captura: rascunho recuperável, histórico recente de desfazer na aba, nota/data/tags/checklist opcionais, Enter para guardar no título e Tab para navegar. Tags livres pesquisáveis. Sucesso de captura condicionado à gravação no navegador.
