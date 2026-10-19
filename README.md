@@ -14,7 +14,7 @@ Abra `Clareza.html` no navegador, sem instalação ou dependências externas. Pa
 - Arrastar no desktop: centro para inserir dentro; bordas superior/inferior para ordenar. As opções de localização e os botões de ordem são alternativas explícitas para toque e teclado.
 - Hierarquia visual por conjuntos alinhados, sem árvore de recuos. Mobile first, adaptado para tablet/desktop, claro e escuro.
 - Notas, checklists embutidos e apresentação opcional de lista como checklist. Conferir um item de checklist não o conclui como compromisso.
-- Transformação explícita de item em projeto e relações projeto-ação, sem depender da lista onde estão. Mover para Projetos não transforma automaticamente um item.
+- Registros comuns em todas as listas, inclusive Projetos, com notas e checklist para apoio e planejamento. Sem conversão, vínculo obrigatório ou tela especial de projeto.
 - Busca, datas com significado explícito, conclusão, exportação e importação JSON.
 - Assistência demonstrativa identificada, sem modelo de IA conectado.
 
@@ -30,3 +30,6 @@ Leia [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md), [DESIGN.md](DESIGN.md) e [a sínt
 Não há conta, sincronização, notificações ou integração com calendário. O HTML responsivo não é um aplicativo nativo iOS/iPadOS/Android. O roteiro fixo antigo de revisão foi retirado; a experiência de revisão será desenhada no contexto da jornada, sem exigir sessão ou declarar a saúde do sistema. A primeira avaliação de uso desta versão será do usuário antes de uma nova simulação.
 
 Dados inseridos no navegador não são enviados ao repositório. Os PDFs integrais de referência não estão incluídos no repositório público; a documentação contém sínteses próprias.
+
+## Identidade visual
+A direção D aprovada é a identidade principal: objetos ilustrados autorais, materiais e paleta quentes, busca tátil e hierarquia por composição. Os estudos separados continuam disponíveis apenas como referência.

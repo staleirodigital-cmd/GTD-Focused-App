@@ -19,3 +19,6 @@ Esta decisão substitui as orientações anteriores sobre tipo projeto, convers�
 
 ## Revisão integrada da navegação
 Ícones vetoriais, principais sempre em seminegrito, sublistas regulares com símbolo neutro de lista (sem círculo de progresso). Marca compacta; busca com superfície e atalho apenas em desktop. Ritmo por espaços entre grupos e divisórias apenas entre conjuntos com sublistas. Rodapé com Nova lista e controle explícito de ajustes; estado local disponível nos dados, sem mensagem permanente. Seleção, foco, toque e hover ajustados em claro/escuro. Preservar rolagem por lista e na navegação; transição curta respeita movimento reduzido. Nenhuma semântica de projeto adicionada.
+
+## Identidade principal aprovada: direção D
+Usuário celebrou a identidade própria e autorizou promover D ao aplicativo principal. Esta decisão substitui os testes A/emojis/estudos anteriores. Clareza.html usa família ilustrada autoral D (cinco objetos e papel neutro para listas livres), busca tátil, paleta quente, títulos 600/sublistas 400, ritmo compacto e seleção por superfície. Sublistas permanecem neutras. Sem marca no topo; fechamento mobile preservado. Mesma família em títulos/seletores/busca e organização. Captura, edição, organização, armazenamento e modelo livre preservados; nenhuma nova semântica de projeto. Direcao-D.html continua como estudo histórico.
