@@ -52,3 +52,5 @@ Decisão visual vigente: encerrar o teste de emojis e restaurar ícones vetoriai
 
 ## Revisão integrada da navegação
 Ícones vetoriais, principais sempre em seminegrito, sublistas regulares com símbolo neutro de lista (sem círculo de progresso). Marca compacta; busca com superfície e atalho apenas em desktop. Ritmo por espaços entre grupos e divisórias apenas entre conjuntos com sublistas. Rodapé com Nova lista e controle explícito de ajustes; estado local disponível nos dados, sem mensagem permanente. Seleção, foco, toque e hover ajustados em claro/escuro. Preservar rolagem por lista e na navegação; transição curta respeita movimento reduzido. Nenhuma semântica de projeto adicionada.
+
+Estudo de identidade separado em Estudo-identidade.html: A Presença (silhuetas preenchidas, contraste e acentos vivos), B Matéria (paleta mineral, traços abertos, ritmo mais amplo), C Horizonte (formas suaves, cores translúcidas e tons frios). Mesma estrutura e conteúdo demonstrativo, sem acesso ao storage. Comparação responsiva, claro/escuro, busca e abertura demonstrativa; não é pesquisa nem versão adotada. Aplicativo atual preservado até feedback.
