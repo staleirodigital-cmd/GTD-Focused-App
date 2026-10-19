@@ -62,3 +62,5 @@ Estudo de identidade separado em Estudo-identidade.html: A Presença (silhuetas 
 Direção D Objetos acrescentada ao estudo por solicitação do usuário: referência Airbnb enviada, busca branca com sombra suave, fundo claro aquecido, ícones autorais ilustrados em SVG com luz, materiais e volume. Não são assets Airbnb nem emojis; estudo de linguagem, não produção de ícones fotorrealistas. A–C preservadas, app preservado. Usuário gostou mais de A mas considerou próxima demais de Things; C afasta-se da intenção desejada.
 
 Direção D aprofundada em Direcao-D.html, sem alterar app/comparativo anterior. Três ícones vetoriais ilustrados refinados (bandeja, bússola como hipótese de próximas ações, ampulheta), luz/material comuns. Busca menos elevada, pesos tipográficos próximos, agrupamentos por ritmo. Controle demonstrativo de nomes longos/lista extensa e claro/escuro. Sem storage. Ícones restantes exploratórios; não alegar render 3D/fotorrealista.
+
+Correção da direção D: a busca deve usar superfície escura no tema escuro, com texto/ícone claros e borda discreta; não manter a cápsula branca. Ajustado no comparativo e na prévia aprofundada.
