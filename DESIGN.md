@@ -92,3 +92,5 @@ Título em foco, nota discreta sempre disponível e data/tags/checklist progress
 Captura: removida a instrução textual de teclado sob o compositor a pedido do usuário; interação deve ser intuitiva. Atalhos preservados.
 
 Captura: removidos o texto de atalhos e o botão secundário Guardar e continuar a pedido do usuário. Apenas Guardar permanece como ação visível de gravação.
+
+Editor de registros alinhado à captura: mesma superfície, título/nota, ferramentas de data/tags/checklist e destino no rodapé. Conclusão ao lado do título; assistência e exclusão em Mais opções. Sem texto permanente de autosave. Edição mantém gravação automática; Pronto/Enter no título confirma e fecha.
