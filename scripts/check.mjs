@@ -12,7 +12,7 @@ state.lists.push({id:'dreams',name:'Sonhos',parent:null},{id:'talk',name:'Assunt
 const dream=createItem(state,'Conhecer o Japão','dreams');assert.ok(matches(dream,'dreams'));assert.ok(!dream.kind);
 const a=createItem(state,'Combinar férias','ana');assert.ok(matches(a,'talk'));assert.ok(matches(a,'ana'));assert.ok(!matches(a,'next'));
 assert.equal(setParent('talk','ana'),false);assert.equal(setParent('ana','inbox'),false);assert.equal(setParent('ana',null),true);assert.ok(!matches(a,'talk'));assert.equal(setParent('ana','talk'),true);
-a.list='projects';assert.ok(!a.kind);assert.equal(a.project,undefined);convertProject(a);assert.equal(a.kind,'project');a.list='dreams';assert.ok(matches(a,'dreams'));
+a.list='projects';assert.ok(!a.kind);assert.equal(a.project,undefined);assert.equal(a.kind,undefined);a.list='dreams';assert.ok(matches(a,'dreams'));
 const r=createItem(state,'Comprar pão','rua');const total=state.items.length;assert.equal(removeListData('next'),'space');assert.equal(state.items.length,total);assert.equal(r.list,'rua');assert.equal(state.lists.find(l=>l.id==='rua').parent,null);assert.ok(!state.lists.some(l=>l.id==='next'));assert.ok(!migrate(state).lists.some(l=>l.id==='next'));assert.ok(valid(state));
 assert.equal(removeListData('talk'),'space');assert.equal(state.lists.find(l=>l.id==='ana').parent,null);assert.equal(a.list,'dreams');assert.ok(valid(state));
 state.items.push({id:'direct',title:'Preservar',list:'dreams',checklist:[],done:false});assert.equal(removeListData('dreams'),'space');assert.equal(state.items.find(i=>i.id==='direct').list,'inbox');assert.equal(state.items.length,total+1);assert.equal(removeListData('inbox'),null);
@@ -22,4 +22,4 @@ const store=new Map([[key,original]]);const data=read({getItem:k=>store.get(k),s
 const broken=new Map([[key,'broken']]);read({getItem:k=>broken.get(k),setItem:(k,v)=>broken.set(k,v)});assert.equal(broken.get(key),'broken');assert.ok(storageBlocked);
 `;
 let n=0;runInNewContext(legacy+'\n'+prefix+'\n'+tests,{assert,localStorage:{getItem:()=>null},globalThis:{crypto:{randomUUID:()=>`item-${++n}`}}});
-console.log('PASS: syntax; independent/nested lists; generic aggregation; explicit project intent; editable/removable template; lossless deletion; cycles; v1 migration/backup; v2 idempotency; preservation on invalid data.');
+console.log('PASS: syntax; independent/nested lists; generic aggregation; uniform ordinary items; editable/removable template; lossless deletion; cycles; v1 migration/backup; v2 idempotency; preservation on invalid data.');

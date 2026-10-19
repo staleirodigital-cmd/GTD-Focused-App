@@ -13,3 +13,9 @@ Leia PROJECT_CONTEXT.md e DESIGN.md antes de alterar produto/interface. Ambos re
 
 ## Teste atual: A com emojis nas principais
 A pedido do usuário, testar emojis apenas nas listas principais, preservando o símbolo vetorial neutro das sublistas. Este teste substitui a orientação anterior de A inteiramente vetorial; não retorna aos emojis em todas as listas. Preservar alinhamento, pesos, divisórias e modelo livre. Emojis ficam associados à lista, estáveis ao renomear; sublistas não os exibem.
+
+## Decisão vigente: registros comuns, sem especialização de projeto
+Esta decisão substitui as orientações anteriores sobre tipo projeto, conversão e vínculo projeto–ação. Projetos é uma lista comum; seus registros usam o mesmo editor, notas e checklist de qualquer item. Não há tela de projeto, contagem de ações relacionadas, conversão ou criação vinculada. Ações atuais ficam nas listas escolhidas pelo usuário; planejamento pode ficar nas notas. Campos legados kind/project são preservados inertes para evitar perda de dados antigos, sem efeitos na interface. Tags foram mapeadas no guia Things (pp. 16–17) como relação opcional, mas ficam para discussão futura, não implementadas. Antes de adicionar estrutura que interprete significado (tipos, inferências, vínculos, regras), avisar e combinar com o usuário. Não inferir projeto pela lista ou conteúdo.
+
+## Revisão integrada da navegação
+Ícones vetoriais, principais sempre em seminegrito, sublistas regulares com símbolo neutro de lista (sem círculo de progresso). Marca compacta; busca com superfície e atalho apenas em desktop. Ritmo por espaços entre grupos e divisórias apenas entre conjuntos com sublistas. Rodapé com Nova lista e controle explícito de ajustes; estado local disponível nos dados, sem mensagem permanente. Seleção, foco, toque e hover ajustados em claro/escuro. Preservar rolagem por lista e na navegação; transição curta respeita movimento reduzido. Nenhuma semântica de projeto adicionada.
