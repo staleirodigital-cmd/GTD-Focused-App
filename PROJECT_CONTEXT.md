@@ -64,3 +64,5 @@ Direção D Objetos acrescentada ao estudo por solicitação do usuário: refer�
 Direção D aprofundada em Direcao-D.html, sem alterar app/comparativo anterior. Três ícones vetoriais ilustrados refinados (bandeja, bússola como hipótese de próximas ações, ampulheta), luz/material comuns. Busca menos elevada, pesos tipográficos próximos, agrupamentos por ritmo. Controle demonstrativo de nomes longos/lista extensa e claro/escuro. Sem storage. Ícones restantes exploratórios; não alegar render 3D/fotorrealista.
 
 Correção da direção D: a busca deve usar superfície escura no tema escuro, com texto/ícone claros e borda discreta; não manter a cápsula branca. Ajustado no comparativo e na prévia aprofundada.
+
+Direção D, rodada 2 autorizada: quatro prioridades aplicadas na prévia Direcao-D.html. Linhas principais 46px, contextos 44px, título de grupo próximo dos filhos e pausa maior após conjunto; bússola simplificada e ampulheta mais larga; peso principal 520 e secundário 430; símbolos neutros com mais presença. Busca 48px, sombra reduzida, seleção com marca lateral e cor quente, em claro/escuro. App principal preservado.
