@@ -62,3 +62,5 @@ Direção D aprofundada em Direcao-D.html, sem alterar app/comparativo anterior.
 Correção da direção D: a busca deve usar superfície escura no tema escuro, com texto/ícone claros e borda discreta; não manter a cápsula branca. Ajustado no comparativo e na prévia aprofundada.
 
 Direção D, rodada 2 autorizada: quatro prioridades aplicadas na prévia Direcao-D.html. Linhas principais 46px, contextos 44px, título de grupo próximo dos filhos e pausa maior após conjunto; bússola simplificada e ampulheta mais larga; peso principal 520 e secundário 430; símbolos neutros com mais presença. Busca 48px, sombra reduzida, seleção com marca lateral e cor quente, em claro/escuro. App principal preservado.
+
+Direção D rodada 3: títulos 600 e sublistas 400 para hierarquia estável, ritmo preservado. Bússola redesenhada com diâmetro maior e ponteiro mais simples, ampulheta com vidro e moldura mais largos, paleta dos materiais mais expressiva. Seleção apenas por superfície em claro/escuro, sem faixa ou mudança de cor do texto. Continua prévia separada. Renderização final deve ser julgada no dispositivo do usuário; screenshots locais não equivalem a iOS.
