@@ -102,3 +102,5 @@ Editor de registros alinhado à captura: mesma superfície, título/nota, ferram
 ## Microinterações como princípio
 Todas as ações devem ter uma resposta perceptível, clara e proporcional: estado de pressão, transição de contexto ou confirmação de resultado. Movimento deve explicar a ação, nunca atrasar a interação, exigir espera ou virar decoração. Respeitar movimento reduzido, teclado, toque e temas claro/escuro. Aplicar progressivamente a cada jornada; não afirmar que todas as ações já foram revisadas.
 Primeira rodada: + global/menu responde à pressão e abre captura com elevação curta (230ms); tocar uma tarefa responde à pressão e revela editor com expansão discreta (210ms). Fundo acompanha em 180ms. Campos recebem foco imediatamente, sem esperar animação; rascunhos e persistência preservados.
+
+Correção de motion após feedback de ausência perceptível: abertura agora dispara Web Animations explicitamente após showModal, inclusive ao recuperar rascunho; captura 320ms/48px, editor 290ms/20px com escala discreta. Movimento reduzido recebe somente fade de 120ms. Verificação deve observar frames intermediários e conclusão, não apenas nome CSS.
