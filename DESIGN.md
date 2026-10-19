@@ -94,3 +94,7 @@ Captura: removida a instrução textual de teclado sob o compositor a pedido do 
 Captura: removidos o texto de atalhos e o botão secundário Guardar e continuar a pedido do usuário. Apenas Guardar permanece como ação visível de gravação.
 
 Editor de registros alinhado à captura: mesma superfície, título/nota, ferramentas de data/tags/checklist e destino no rodapé. Conclusão ao lado do título; assistência e exclusão em Mais opções. Sem texto permanente de autosave. Edição mantém gravação automática; Pronto/Enter no título confirma e fecha.
+
+## Microinterações como princípio
+Todas as ações devem ter uma resposta perceptível, clara e proporcional: estado de pressão, transição de contexto ou confirmação de resultado. Movimento deve explicar a ação, nunca atrasar a interação, exigir espera ou virar decoração. Respeitar movimento reduzido, teclado, toque e temas claro/escuro. Aplicar progressivamente a cada jornada; não afirmar que todas as ações já foram revisadas.
+Primeira rodada: + global/menu responde à pressão e abre captura com elevação curta (230ms); tocar uma tarefa responde à pressão e revela editor com expansão discreta (210ms). Fundo acompanha em 180ms. Campos recebem foco imediatamente, sem esperar animação; rascunhos e persistência preservados.
